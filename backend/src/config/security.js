@@ -1,0 +1,17 @@
+const LOGIN_MAX_INTENTOS = Number(
+  process.env.LOGIN_MAX_INTENTOS || 5
+);
+
+const LOGIN_BLOQUEO_MINUTOS = Number(
+  process.env.LOGIN_BLOQUEO_MINUTOS || 15
+);
+
+const PASSWORD_RESET_MINUTOS = Number(
+  process.env.PASSWORD_RESET_MINUTOS || 15
+);
+
+module.exports = {
+  LOGIN_MAX_INTENTOS,
+  LOGIN_BLOQUEO_MINUTOS,
+  PASSWORD_RESET_MINUTOS
+};
